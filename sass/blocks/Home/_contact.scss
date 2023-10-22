@@ -1,0 +1,152 @@
+.contact {
+  background-color: var(--contact-bg);
+  padding-bottom: 97px;
+}
+.contact__inner {
+  background-color: var(--contact-inner-bg);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.contact__right {
+  background-color: var(--contact-bg);
+  width: 100%;
+  max-width: 448px;
+  margin-left: 32px;
+  padding: 45px 40px;
+  border-radius: 16px;
+}
+
+.contact__title {
+  margin: 0 0 16px;
+  color: var(--main-text);
+}
+
+.contact__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  color: var(--hero-card-text);
+}
+
+.contact__faq {
+  color: #ba8d5b;
+}
+
+.contact__name__label {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  margin-bottom: 6px;
+  color: var(--contact-label);
+}
+
+.contact__name__input {
+  padding: 14px 0 14px 17px;
+  max-width: 368px;
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  background-color: var(--contact-bg);
+  color: var(--main-text);
+  &:focus {
+    outline: none;
+  }
+}
+
+.contact__phone__label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  color: var(--contact-label);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.contact__phone__input {
+  padding: 14px 0 14px 17px;
+  max-width: 368px;
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 100px;
+  margin-bottom: 32px;
+  padding-left: 55px;
+  background-color: var(--contact-bg);
+  color: var(--main-text);
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+.value__input {
+  position: relative;
+  &::before {
+    content: '+998';
+    position: absolute;
+    color: var(--main-text);
+    width: 38px;
+    height: 24px;
+    z-index: 2;
+    top: calc(50% - 9px);
+    left: 14px;
+  }
+}
+
+.contact__text__second {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--main-text);
+  max-width: 352px;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.contact__link {
+  margin-left: 10px;
+}
+
+.contact__submit__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--contact-bg);
+  padding: 13px 0;
+  max-width: 368px;
+  width: 100%;
+  background-color: #ba8d5b;
+  border-radius: 100px;
+  border: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .contact__left img {
+    width: 100%;
+    max-width: 448px;
+  }
+  .contact__right {
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .contact__inner {
+    justify-content: center;
+  }
+
+  .contact__left img {
+    display: none;
+  }
+
+  .contact__right {
+    max-width: 326px;
+  }
+}

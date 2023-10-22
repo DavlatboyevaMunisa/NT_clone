@@ -1,0 +1,88 @@
+:root {
+  --main-text: #000000;
+  --logo: url('../../images/logo.svg');
+  --toggler-icon: url('../images/dark-icon.svg');
+  --header-top-bg-color: #f1f0ee;
+  --header-bg-color: #f1f0ee;
+  --header-bg-img: url('../images/hero-bgi.png');
+  --mode-btn-bg: #f5f5f5;
+  --courses-bg: #f9f8f7;
+  --courses-desc: #607987;
+  --courses-item-border: 1px solid #607987;
+  --bg-hero: #fff;
+  --hero-card-text: #607987;
+  --contact-bg: #ffffff;
+  --contact-inner-bg: #f9f8f7;
+  --contact-label: #000;
+  --hero-title: #0f1826;
+  --hero-card-icon1: url('../../images/online-academy.svg');
+  --hero-card-icon2: url('../../images/master-work.svg');
+  --hero-card-icon3: url('../../images/not-just-course.svg');
+  --hero-card-icon4: url('../../images/increative-lessons.svg');
+  --hero-btn: #ba8d5b1a;
+  --hero-bg-position: calc(50% - 0px) calc(100% + 50px);
+  --toggler-hover: url('../images/dark-icon-white.svg');
+  --menu-bg: #f9f8f7;
+  --menu-overlay: rgba(0, 0, 0, 0.7);
+  --open-btn: url('../images/close.svg');
+  --close-btn: url('../images/close-btn.png');
+  --footer-bg: #f9f8f7;
+  --footer-desc: #607987;
+  --insta: url('../images/insta-icon.svg');
+  --lk: url('../images/lk-icon.svg');
+  --footer-drop-down: url('../../images/arrow-down.svg');
+  --blog-bg: #fff;
+  --blog-text: #00000059;
+  --views-icon: url('../images/views-icon.svg');
+  
+}
+
+.dark {
+  --main-text: #fff;
+  --logo: url('../../images/logo-dark.svg');
+  --header-top-bg-color: #0f1826;
+  --header-bg-color: #09111b;
+  --header-bg-img: url('../images/hero-bgi-dark.png');
+  --mode-btn-bg: #272727;
+  --courses-bg: #09111b;
+  --courses-desc: #bbe7ff;
+  --courses-item-border: 1px solid #bbe7ff;
+  --bg-hero: #021923;
+  --hero-card-text: #ffffff;
+  --toggler-icon: url('../images/light-icon.svg');
+  --header-bg-color: #09111b;
+  --header-bg-img: url('../images/hero-bgi-dark.png');
+  --mode-btn-bg: #272727;
+  --contact-bg: #021923;
+  --contact-inner-bg: #f9f8f73b;
+  --contact-label: #ba8d5b;
+  --hero-title: #fff;
+  --hero-card-icon1: url('../../images/online-academy-dark.svg');
+  --hero-card-icon2: url('../../images/master-work-dark.svg');
+  --hero-card-icon3: url('../../images/not-just-course-dark.svg');
+  --hero-card-icon4: url('../../images/increative-lessons-dark.svg');
+  --hero-btn: #13e0b2e6;
+  --hero-bg-position: calc(50% - 24px) calc(100% + 8px);
+  --toggler-hover: url('../images/light-icon.svg');
+  --menu-bg: #021923;
+  --menu-overlay: rgba(249, 248, 247, 0.2);
+  --open-btn: url('../images/open-light.svg');
+  --close-btn: url('../images/close-dark.png');
+  --footer-bg: #0f1826;
+  --footer-desc: #fff;
+  --insta: url('../images/insta-icon-dark.svg');
+  --lk: url('../images/lk-icon-dark.svg');
+  --footer-drop-down: url('../../images/arrow-down-dark.svg');
+  --blog-bg: #09111b;
+  --blog-text: #ffffff;
+  --views-icon: url('../images/views-icon-dark.svg');
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    --hero-bg-position: calc(50% - 100px) calc(100% + 50px);
+  }
+  .dark {
+    --hero-bg-position: calc(50% - 100px) calc(100% + 8px);
+  }
+}

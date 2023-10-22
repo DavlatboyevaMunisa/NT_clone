@@ -1,0 +1,237 @@
+.comments {
+  padding: 40px 0 114px;
+  background-color: var(--contact-bg);
+
+  h2 {
+    margin: 0 0 24px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--main-text);
+  }
+}
+
+.comments__desc {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--courses-desc);
+}
+
+.comments__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+
+  li {
+    position: relative;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 127px;
+    padding: 6px;
+    border: none;
+    border-radius: 100px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    color: #000000;
+
+    &::before {
+      display: block;
+      width: 28px;
+      height: 28px;
+      background-image: url('../../images/play.svg');
+      background-position: center right 5px;
+      background-repeat: no-repeat;
+      background-color: #ba8d5b;
+      border-radius: 14px;
+      content: '';
+    }
+  }
+
+  .pause-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 4;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 127px;
+    padding: 6px;
+    border: none;
+    border-radius: 100px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    color: #000000;
+
+    &::before {
+      display: block;
+      width: 28px;
+      height: 28px;
+      background-image: url('https://najottalim.uz/_next/static/media/icon-play.de961c45.svg');
+      background-position: center right 5.7px;
+      background-repeat: no-repeat;
+      background-color: #ba8d5b;
+      border-radius: 14px;
+      content: '';
+    }
+  }
+
+  video {
+    width: 214px;
+    height: auto;
+    border-radius: 24px;
+  }
+
+  .video__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    padding: 90px 22px 20px;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.37) 69.5%,
+      rgba(0, 0, 0, 0.65) 90.34%
+    );
+
+    time {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: -0.24px;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 6px 0;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: -0.24px;
+      color: #7cd1ac;
+    }
+
+    h3 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+  }
+}
+
+.carousel-btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.prev {
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: #ba8d5b;
+  border: 0;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+}
+
+.next {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #ba8d5b;
+  border: 0;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+  .comments__list {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+
+    li + li {
+      margin-left: 30px;
+    }
+
+    li:nth-child(3) {
+      h3 {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .prev {
+    display: block;
+  }
+
+  .next {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  .comments {
+    padding: 40px 0 40px ;
+  }
+
+  .comments__list {
+    width: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+
+    li {
+      margin: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .comments {
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .comments__desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .comments {
+    h2 {
+      font-size: 22px;
+    }
+  }
+}

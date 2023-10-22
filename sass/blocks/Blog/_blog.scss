@@ -1,0 +1,132 @@
+.blog {
+  background-color: var(--courses-bg);
+  padding-bottom: 48px;
+}
+
+.blog__hero {
+  background-color: var(--courses-bg);
+}
+
+.blog__hero:nth-child(3) {
+  padding: 16px 0;
+}
+.blog__hero:nth-child(2) {
+  padding: 0;
+}
+
+.blog__btns button {
+  background-color: var(--contact-bg);
+  color: var(--main-text);
+  margin-bottom: 24px;
+}
+
+.blog__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 47px;
+}
+
+.blog__type {
+  padding: 5px 12px;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  top: 16px;
+  left: 16px;
+  display: none;
+}
+.card {
+  max-width: 342px;
+  width: 100%;
+  position: relative;
+  padding: 8px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    .blog__type {
+      display: block;
+    }
+    box-shadow: 0 2px 16px 3px #0000001a;
+    border-radius: 12px;
+  }
+}
+
+.image__blog {
+  width: 100%;
+}
+
+.blog__texts {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--blog-text);
+}
+
+.blog__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-text);
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.blog__views {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -18px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    top: 1px;
+    background-image: var(--views-icon);
+  }
+}
+
+.blog__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--blog-text);
+}
+
+.blog__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  padding: 13px 0;
+  max-width: 200px;
+  width: 100%;
+  background-color: #ba8d5b;
+  border-radius: 100px;
+  border: none;
+  display: block;
+  margin: 56px auto 0;
+}
+
+@media screen and (max-width: 960px) {
+  .blog__cards {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .blog__cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    max-width: 342px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
